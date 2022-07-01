@@ -166,16 +166,5 @@ export class VpcTrafficMirroringStack extends Stack {
         gatewayLoadBalancerArns: [gwlb.ref],
       }
     );
-
-    // new ec2.InterfaceVpcEndpoint(this, "VPC Endpoint", {
-    //   vpc: consumerVPC,
-    //   service: new ec2.InterfaceVpcEndpointService(
-    //     `com.amazonaws.vpce.${this.region}.${vpcEndpointService.ref}`,
-    //     6081
-    //   ),
-    //   subnets: consumerVPC.selectSubnets({
-    //     subnetType: ec2.SubnetType.PRIVATE_ISOLATED,
-    //   }),
-    // });
   }
 }
