@@ -6,8 +6,6 @@ import {
   aws_elasticloadbalancingv2 as elbv2,
 } from "aws-cdk-lib";
 import { Construct } from "constructs";
-import * as path from "path";
-import * as fs from "fs";
 
 export class VpcTrafficMirroringStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
